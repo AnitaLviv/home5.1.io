@@ -1,184 +1,277 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
 
 @font-face {
-    font-family: Tahoma;
-    src: url(../fonts/Tahoma.ttf);
+      font-family: Tahoma;
+      src: url(../fonts/Tahoma.ttf);
    }
 
 body {
-font-family:Tahoma, Arial, sans-serif;
+     font-family:'Tahoma', Arial, sans-serif;
+
 }
 
 .countainer {
-  max-width: 1920px;
-  height: 1080px;
-  background-image: url(../img/background.png);
-  background-repeat: no-repeat;
-
+     margin: 0 auto;
+     width: 1920px;
+     height: 100%;
+     background-image: url(../img/background.png);
+     background-repeat: no-repeat;
 }
 
 .nav {
- font-size: 14px;
- font-family: Tahoma, Arial, sans-serif;
- line-height: 14px;
+     font-size: 14px;
+     font-family: Tahoma, Arial, sans-serif;
+     line-height: 14px;
+     max-width: 1215px;
+     width: 100%;
 }
 
 ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #1b5387;
-  margin-right: 624px;
-   
+     list-style-type: none;
+     overflow: hidden;
+     background-color: #1b5387;
+     margin-right: 624px;
 }
 
 li {
-  float: right;
+     float: right;
 }
 
 li a {
-  display: block;
-  text-align: center;
-  padding: 10px 17px;
-  text-decoration: none;
-  color: #60b5ed;
-}
-
-
-.active1 {
-  background-image: linear-gradient(to top,rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 20%,rgba(255,255,255,0.3) 100%);
-  margin-right: 20px;
-  border-right: 1px solid #fefefe;
-  border-left:  1px solid #fefefe;
-}
-
-.active1 span {
-  text-decoration: underline;
-}
-
-.active2 {
-  background-color: #4eabd9;
+     display: block;
+     text-align: center;
+     padding: 10px 17px;
+     text-decoration: none;
+     color: #60b5ed;
 }
 
 .active3 {
- border-left: 1px solid #fefefe;
+     border-left: 1px solid #fefefe;
 }
 
 .active3 a:before {
- content: "     ";
- background: url(../img/flag.png) no-repeat;
- background-color:#1b5387;
-  padding-left: 30px;
+     content: "     ";
+     background: url(../img/flag.png) no-repeat;
+     padding-left: 30px;
 }
 
 
 .active1 a,
 .active2 a,
 .active3 a {
- font-weight: normal;
- color: white;
+     font-weight: normal;
+     color: white;
+}
+
+.active span {
+      font-size: 24px;
 }
 
 .center {
- width: 560px;
- height: 613px;
- background-color: rgba(0,0,0, 0.6);
- margin: 202px 302px 202px 353px;
+     width: 560px;
+     height: 613px;
+     background-color: rgba(0,0,0, 0.6);
+     margin: 202px 302px 202px 353px;
 }
 
 
 h1 {
- font-size: 24px;
- font-family:Tahoma, Arial, sans-serif;
- color: white;
- line-height: 16px;
- text-align: center;
- padding-top: 21px;
- padding-bottom: 21px;
- margin-bottom: 30px;
- border-bottom: 2px solid white;
+     font-size: 24px;
+     font-family:Tahoma, Arial, sans-serif;
+     color: white;
+     line-height: 16px;
+     text-align: center;
+     padding-top: 21px;
+     padding-bottom: 21px;
+     margin-bottom: 30px;
+     border-bottom: 2px solid white;
 }
 
 .center1 {
- margin-left: 140px;
- margin-right: 42px;
+     margin-left: 140px;
+     margin-right: 42px;
 }
 
 .selected {
- position: relative;
- margin-top: 30px;
- margin-bottom: 30px;
+     position: relative;
+     margin-top: 30px;
+     margin-bottom: 30px;
 }
+
 .selected .name  {
-position: absolute;
-top: 6px;
-left: 130px;
-color: #999;
-font-size: 14px;
+     position: absolute;
+     top: 6px;
+     left: 130px;
+     color: #999;
+     font-size: 14px;
 }
 
-.active:first-child {
-background-image: url(../img/layer.png);
-background-position: center;
-}
-
-
-[type="text"] {
-width: 276px;
-height: 35px;
-margin-top: 8px;
-margin-bottom: 8px;
-font-size: 14px;
-line-height: 16px;
-padding-left: 19px;
-color: #ccc;
-border: none;
-background-image: linear-gradient(to top,#111 0%, #0e0d0d 100%);
-box-shadow: inset 0 0 2px rgba(0,0,0,0.1), 0 0 9px rgba(47,123,197,0.77),inset 0 2px 5px rgba(29,26,22,0.2),0 1px #4b4b4b;
-}
 
 .foot {
-padding-top: 10px;
-font-size: 14px;
-line-height: 16px;
-color: #ccc;
-}
-
-.foot1 [type="text"] {
-width: 151px;
-height: 37px;
-margin-left: 50px;
-margin-right: 20px;
-margin-top: 15px;
-margin-bottom: 15px;
-border: 1px solid #e68e16;
-background-image: url(../img/bottom.png);
-                   
+     padding-top: 10px;
+     font-size: 14px;
+     line-height: 16px;
+     color: #ccc;
 }
 
 .text {
-font-size: 11px;
-line-height: 16px;
-color: #ccc;
-text-align: center;
-padding-right: 100px;
-margin-left: -40px;
+     font-size: 11px;
+     line-height: 16px;
+     color: #ccc;
+     text-align: center;
+     padding-right: 100px;
+     margin-left: -40px;
+}
+
+.facebook a {
+       text-decoration: none;
+       color: white;
+    
+}
+
+.facebook_logo {
+       float: left;
+       display: inline-block;
+       line-height: 34px;
+       width: 37px;
+       border-right: 1px solid #1d3c75;
+}
+
+.facebook_logo img {
+       margin-top: 5px;
+       padding-left: 15px;
+}
+
+.facebook .login{
+       border-left: 1px solid #476299;
+       padding-left: 31px;
+}
+.login img {
+        margin-top: 10px;
+}
+
+.facebook .login span{
+        font-weight: bold;
+   
+}
+
+.facebook .login img{
+        padding-left: 22px;
 }
 
 
+.facebook {
+	margin: 0 auto;
+	border-top: 1px solid #778ab4;
+	border-radius: 3px;
+	background-image: -ms-linear-gradient(top, #3D5792 0%, #364063 100%);
+	background-image: -moz-linear-gradient(top, #3D5792 0%, #364063 100%);
+	background-image: -o-linear-gradient(top, #3D5792 0%, #364063 100%);
+	background-image: -webkit-linear-gradient(top, #3D5792 0%, #364063 100%);
+        width: 276px;
+	height: 36px;
+        margin-left: 1px;
+}
+
+input[type="text"]{
+	display: block;
+	width: 276px;
+	height: 35px;
+	padding-left: 18px;
+	background: #000;
+	border:none;
+	margin: 0 auto 0 auto;
+        margin-right: 150px;
+}
+
+input[type="text"]:focus{
+	background: #1b5288;
+	box-shadow: 0 0 6px  white;
+	border-bottom: #689bcc;
+        
+}
+
+input[type="password"]{
+	display: block;
+	width: 276px;
+	height: 35px;
+	padding-left: 18px;
+	background: #000;
+	border:none;
+	margin: 0 auto 10px auto;
+}
+
+input[type="password"]:focus {
+	background: #1b5288;
+	box-shadow: 0 0 6px  white;
+	border-bottom: #689bcc;
+}
+
+input[type="email"] {
+	display: block;
+	width: 276px;
+	height: 35px;
+	padding-left: 18px;
+	background: #000;
+	border:none;
+	margin: 0 auto 10px auto;
+}
+
+input[type="email"]:focus {
+	background: #1b5288;
+	box-shadow: 0 0 6px  white;
+	border-bottom: #689bcc;
+}
+
+.checkbox{
+	width: 200px;
+	margin: 0 auto;
+	color: white;
+	font-size: 12px;
+}
 
 
+.active22 {
+      text-decoration: none;
+      color: #60b5ed;
+      display: inline-block;
+      padding: 0 14px;
+}
+.nav .active22 a:hover {
+      color: white;
+      background: #4eabda;
+}
+.nav .active1 a:hover {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(255, 255, 255, 0.3) 100%);
+      margin-right: 10px;
+}
 
+.nav .active1 a span:hover {
+      text-decoration: underline;
+}
 
+.nav .active3 a:hover {
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(255, 255, 255, 0.3) 100%);
+}
 
-
-
-
-
-
+input[type="submit"]{
+      display: block;
+      background-image: linear-gradient(top,  rgba(80,174,219,1) 0%, rgba(46,122,196,1) 100%);
+      background: -webkit-linear-gradient(top,  rgba(80,174,219,1) 0%,rgba(46,122,196,1) 100%);
+      background: linear-gradient(to bottom,  rgba(80,174,219,1) 0%,rgba(46,122,196,1) 100%); 
+      width: 149px;
+      height: 32px;
+      border: none;
+      border-radius: 3px;
+      margin: 20px auto;
+      color: white;
+      font-size: 14px;
+      margin-left: 60px;
+}
 
 
 
